@@ -5,6 +5,9 @@
 body{
     background-color: #666;
     font-weight: 700;
+    background-image: url(./../img/timg.jpg);
+    background-position: center center;
+    background-repeat: repeat-y;
 }
 .head{
     position: relative;
