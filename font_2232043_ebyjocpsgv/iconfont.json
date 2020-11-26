@@ -1,0 +1,37 @@
+{
+  "id": "2232043",
+  "name": "百度1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "312575",
+      "name": "settings2",
+      "font_class": "settings2",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "1567576",
+      "name": "iphone",
+      "font_class": "iphone",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "10561589",
+      "name": "Check, square",
+      "font_class": "Checksquare",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "11770071",
+      "name": "Pencil",
+      "font_class": "Pencil",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    }
+  ]
+}
