@@ -2,6 +2,20 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+    font-size: 16px;
+  }
+  
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+    font-size: 16px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+    font-size: 16px;
+  }
 body{
     background-color: #666;
     font-weight: 700;
@@ -305,4 +319,241 @@ background-color: rgba(0,0,0,.4);
     vertical-align: top;
     width: 100%;
     height: 100%;
+}
+.awesome{
+    width: 1200px;
+    height: calc(1000px*1200/1600);
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #e7e7e7;
+}
+.awesome .box{
+    margin-top: calc(80px*1200/1600);
+    margin-bottom: calc(60px*1200/1600);
+    text-align: center;
+}
+.awesome .box h4{
+    font-size: 42px;
+    margin-bottom: calc(10px*1200/1600);
+}
+.awesome .box p{
+    color: #5a5a5a;
+    width: 800px;
+    margin: 0 auto;
+}
+.awesome .show_photo{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+.awesome .show_photo div{
+    position: relative;
+    float: left;
+    width: 390px;
+    height: 220px;
+}
+.awesome .show_photo div:hover .mask{
+    display: block;
+}
+.awesome .show_photo img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.awesome .show_photo>div .mask{
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+.awesome .show_photo>div .mask h4{
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.awesome .show_photo>div .mask p{
+    text-align: center;
+    font-size: 14px;
+    color: #adadad;
+}
+.awesome .show_photo>div .mask .box{
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    /* margin: 0 auto; */
+    margin-left: -100px;
+}
+.awesome .show_photo>div .mask .box a{
+    text-decoration: none;
+}
+.awesome .show_photo>div .mask .box div{
+    margin: 0;
+    height: 100%;
+    width: 40px;
+    border: 1px solid #797979;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.awesome .show_photo>div .mask .box >div:nth-child(1),
+.awesome .show_photo>div .mask .box >div:nth-child(2){
+    margin-right: 37px !important;
+}
+.awesome .show_photo>div .mask .box div i{
+    font-size: 34px;
+    color: #fff;
+}
+.awesome .show_photo div:nth-child(1),.awesome .show_photo div:nth-child(3){
+    margin-right: 20px;
+}
+.awesome .show_photo div:nth-child(2),.awesome .show_photo div:nth-child(4){
+    margin-bottom: 20px;
+}
+.comment{
+    width: 1200px;
+    height: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.comment .main{
+    width: 800px;
+    height: 400px;
+    margin: 50px auto 0;
+    /* background-color: pink; */
+}
+.comment .main .write{
+    float: left;
+    width: 48%;
+    height: 100%;
+}
+.comment .main .contacts{
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding: 30px 0 0 70px;
+}
+.comment .main .contacts h4{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.comment .main .contacts p{
+    font-size: 14px;
+    color: #797979;
+    margin-bottom: 30px;
+}
+.comment .main .contacts div{
+    position: relative;
+    display: flex;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.comment .main .contacts div:nth-of-type(1) span{
+    position: absolute;
+    top: -4px;
+    left: 34px;
+}
+.comment .main .contacts div:nth-of-type(2) span{
+    position: absolute;
+    top: 2px;
+    left: 35px;
+}
+.comment .main .contacts div:nth-of-type(3) span{
+    position: absolute;
+    top: 3px;
+    left: 37px;
+}
+.comment .main .contacts .iconfont{
+    font-size: 25px;
+}
+.comment .main .write{
+    border: 2px solid #d4d3d3;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.comment .main .write .inner{
+    width: 340px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.comment .main .write .inner >p{
+    margin: 30px 0;
+    text-align: center;
+}
+.comment .main .write .inner input{
+    outline: none;
+    display: block;
+    width: 340px;
+    margin-bottom: 10px;
+}
+.comment .main .write .inner textarea,.comment .main .write .inner input[type="text"]{
+    padding-left: 10px;
+    width: 326px;
+}
+.comment .main .write .inner input[type="text"]{
+    height: 40px;
+}
+
+.comment .main .write .inner textarea{
+    outline: none;
+    height: 150px;
+    width: 326px;
+    resize: none;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.comment .main .write .inner input[type="submit"]{
+    border: 0;
+    width: 100%;
+    height: 30px;
+    border-radius:0;
+    color: #fff;
+    background-color: black;
+}
+.end{
+    width: 1200px;
+    height: calc(400px*1200/1600);
+    background-color: #000;
+    margin: 0 auto;
+}
+.end .main{
+    width: 1000px;
+    height: 100%;
+    /* background-color: #bfc; */
+    margin: 0 auto;
+}
+.end .main dl{
+    float: left;
+    margin-top: 71px;
+    margin-right: 107px;
+}
+.end .main dl:last-child{
+    width: 300px;
+    margin-right: 0;
+}
+.end .main dl dt{
+    margin-bottom: 10px;
+    color: #d6d6d6;
+    font-size: 14px;
+}
+.end .main dl dd{
+    margin-bottom: 10px;
+    color: #676767;
+    font-size: 16px;
+
+}
+
+.end .main dl dd a{
+    color: #676767;
+    text-decoration: none;
 }
