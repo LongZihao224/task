@@ -275,6 +275,10 @@ background-color: rgba(0,0,0,.4);
     font-size: calc(16px*1200/1600);
     margin: 0 50px;
 }
+.try .box .items p{
+    margin-top: 20px;
+    color: #797979;
+}
 .photos{
     display: flex;
     width: 1200px;
