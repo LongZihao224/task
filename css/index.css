@@ -16,12 +16,17 @@
     color: #999;
     font-size: 16px;
   }
+@font-face{
+    font-family: 'Montserrat-ExtraLight';
+    src: url(./../font/Montserrat-ExtraLight.otf);
+}
 body{
     background-color: #666;
     font-weight: 700;
     background-image: url(./../img/timg.jpg);
     background-position: center center;
     background-repeat: repeat-y;
+    font-family: 'Montserrat-ExtraLight';
 }
 .head{
     position: relative;
@@ -263,7 +268,7 @@ background-color: rgba(0,0,0,.4);
     height: calc(390px*1200/1600);
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .try .box .items{
     text-align: center;
